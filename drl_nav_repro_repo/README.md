@@ -75,5 +75,3 @@ See `docs/REPRODUCE_PAPER.md`.
 ## Citation
 If you use this code, please cite the paper.
 
-## License
-Choose a license (e.g., MIT) and place it in `LICENSE`.
