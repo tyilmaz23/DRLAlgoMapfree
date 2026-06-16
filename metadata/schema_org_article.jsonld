@@ -1,0 +1,66 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer",
+  "headline": "A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer",
+  "description": "A comparative study of deep reinforcement learning algorithms for map-free mobile robot navigation with zero-shot sim-to-real transfer.",
+  "identifier": [
+    "https://doi.org/10.1109/ACCESS.2026.3684520",
+    "WOS:001748497200045"
+  ],
+  "sameAs": [
+    "https://doi.org/10.1109/ACCESS.2026.3684520",
+    "https://ieeexplore.ieee.org/document/11482413/",
+    "https://github.com/tyilmaz23/DRLAlgoMapfree"
+  ],
+  "url": "https://github.com/tyilmaz23/DRLAlgoMapfree",
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "IEEE Access",
+    "issn": "2169-3536"
+  },
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Taner Yilmaz",
+      "givenName": "Taner",
+      "familyName": "Yilmaz",
+      "sameAs": [
+        "https://orcid.org/0000-0002-1721-9071",
+        "https://github.com/tyilmaz23/"
+      ]
+    },
+    {
+      "@type": "Person",
+      "name": "Omur Aydogmus",
+      "givenName": "Omur",
+      "familyName": "Aydogmus",
+      "sameAs": [
+        "https://orcid.org/0000-0001-8142-1146"
+      ]
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Institute of Electrical and Electronics Engineers"
+  },
+  "datePublished": "2026",
+  "volumeNumber": "14",
+  "pageStart": "60268",
+  "pageEnd": "60284",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "keywords": [
+    "deep reinforcement learning",
+    "map-free navigation",
+    "mobile robot navigation",
+    "zero-shot sim-to-real transfer",
+    "autonomous robots",
+    "robot learning",
+    "sim-to-real transfer",
+    "Stable-Baselines3",
+    "ROS",
+    "Gazebo",
+    "TurtleBot3"
+  ],
+  "citation": "Yilmaz, T., and Aydogmus, O. (2026). A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer. IEEE Access, 14, 60268-60284. https://doi.org/10.1109/ACCESS.2026.3684520"
+}

@@ -1,78 +1,114 @@
-# Map-Free DRL Navigation (Sim-to-Real) — Reproducibility Repository
+# Map-Free DRL Navigation With Zero-Shot Sim-to-Real Transfer
 
-This repository contains the training/evaluation pipeline used in the IEEE Access paper:
+Reproducibility repository for the IEEE Access article:
 
-**"A Comparative Study of DRL Algorithms for Map-Free Robot Navigation with Zero-Shot Sim-to-Real Transfer"**
+**A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer**
 
-It provides:
-- A **custom Python simulator** (Gymnasium environment) with **episode-randomized static obstacles** in a 10m×10m arena.
-- Training scripts for **PPO, SAC, A2C, TD3, DDPG** (Stable-Baselines3).
-- **Optuna** hyperparameter optimization scripts (**80 trials**, **3e5 steps/trial**) with a fixed-seed protocol.
-- Evaluation scripts computing success/collision/timeout rates and path-length statistics.
-- Documentation for **ROS/Gazebo** and **TurtleBot3 Burger** deployment (zero-shot transfer).
+Taner Yilmaz and Omur Aydogmus, *IEEE Access*, vol. 14, pp. 60268-60284, 2026.
 
-> Note: If you are releasing this repository for peer review, please replace all placeholder strings like `GITHUB_REPO_URL` with your actual repository link, and optionally include your trained checkpoints under `checkpoints/`.
+- DOI: [10.1109/ACCESS.2026.3684520](https://doi.org/10.1109/ACCESS.2026.3684520)
+- IEEE Xplore: [Document 11482413](https://ieeexplore.ieee.org/document/11482413/)
+- Web of Science UID: `WOS:001748497200045`
+- ORCID: [Taner Yilmaz](https://orcid.org/0000-0002-1721-9071)
+- License for article: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- License for repository code: MIT
+
+## Overview
+
+This repository contains the training and evaluation pipeline used for comparing deep reinforcement learning algorithms in map-free mobile robot navigation. The work focuses on zero-shot sim-to-real transfer, where policies trained in simulation are evaluated for transfer to real-world robot navigation without additional real-world fine-tuning.
+
+The repository provides:
+
+- A custom Python simulator based on a Gymnasium environment.
+- Episode-randomized static obstacles in a 10 m x 10 m arena.
+- Training scripts for PPO, SAC, A2C, TD3, and DDPG with Stable-Baselines3.
+- Optuna hyperparameter optimization scripts with a fixed-seed protocol.
+- Evaluation scripts for success, collision, timeout, and path-length metrics.
+- Documentation for ROS/Gazebo and TurtleBot3 Burger deployment.
+
+## Repository Layout
+
+The implementation is located in [`drl_nav_repro_repo/`](drl_nav_repro_repo/).
+
+```text
+drl_nav_repro_repo/
+  configs/       Environment, reward, and hyperparameter settings
+  docs/          Reproduction and ROS/Gazebo notes
+  ros_gazebo/    ROS/Gazebo placeholders
+  scripts/       Training, evaluation, Optuna, and helper scripts
+  sim/           Custom simulator and LiDAR utilities
+  tests/         Basic environment tests
+```
 
 ## Quickstart
 
-### 1) Environment setup
-
-**Option A (pip):**
 ```bash
+cd drl_nav_repro_repo
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-```
-
-**Option B (conda):**
-```bash
-conda env create -f environment.yml
-conda activate drl_nav
-```
-
-### 2) Sanity check (run a random policy)
-```bash
 python scripts/sanity_check_env.py --episodes 3
 ```
 
-### 3) Train (Stage-2, full budget: 100,000 episodes)
+On Windows PowerShell:
+
+```powershell
+cd drl_nav_repro_repo
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python scripts\sanity_check_env.py --episodes 3
+```
+
+## Training
+
 ```bash
 python scripts/train.py --algo PPO --episodes 100000 --seed 42 --cfg configs/best_hparams.yaml
 ```
 
-### 4) Evaluate (deterministic)
+Supported algorithms include `PPO`, `SAC`, `A2C`, `TD3`, and `DDPG`.
+
+## Evaluation
+
 ```bash
 python scripts/eval.py --algo PPO --model runs/PPO_seed42/model.zip --episodes 20 --seed 42 --deterministic
 ```
 
-### 5) Hyperparameter tuning (Optuna)
+## Hyperparameter Tuning
+
 ```bash
-python scripts/optuna_tune.py --algo PPO --trials 80 --steps-per-trial 300000 --seed 123 \
-  --search-space configs/optuna_search_space.yaml
+python scripts/optuna_tune.py --algo PPO --trials 80 --steps-per-trial 300000 --seed 123 --search-space configs/optuna_search_space.yaml
 ```
 
-## Reproducibility protocol (as in the paper)
+## Reproducibility Protocol
 
-- **Arena:** 10m×10m, 4 walls.
-- **Obstacles:** axis-aligned rectangles; randomized at the start of each episode; stationary within the episode.
-- **Control interval:** Δt = 0.2 s.
-- **Max episode length:** 1000 steps.
-- **Two-stage budget allocation:**
-  1) Stage-1 feasibility screen: **10,000 episodes** for all algorithms.
-  2) Stage-2 retrain from scratch: **100,000 episodes** for selected algorithms.
-- **Seed averaging:** mean over **5 independent seeds**.
+- Arena: 10 m x 10 m, 4 walls.
+- Obstacles: axis-aligned rectangles, randomized at the start of each episode and stationary within the episode.
+- Control interval: delta t = 0.2 s.
+- Max episode length: 1000 steps.
+- Stage-1 feasibility screen: 10,000 episodes for all algorithms.
+- Stage-2 retrain from scratch: 100,000 episodes for selected algorithms.
+- Seed averaging: mean over 5 independent seeds.
 
-See `docs/REPRODUCE_PAPER.md`.
-
-## Repository layout
-- `sim/`            : custom simulator (Gymnasium env + LiDAR ray casting)
-- `scripts/`        : training/evaluation/optuna + helpers
-- `configs/`        : environment, reward, hyperparameters
-- `docs/`           : reproduction + Gazebo/TurtleBot3 notes
-- `ros_gazebo/`     : placeholders for ROS2/Gazebo integration
-- `checkpoints/`    : optional released model artifacts
+See [`drl_nav_repro_repo/docs/REPRODUCE_PAPER.md`](drl_nav_repro_repo/docs/REPRODUCE_PAPER.md).
 
 ## Citation
-If you use this code, please cite the paper.
 
+If you use this repository, discuss the experiments, or build on the simulator, please cite:
 
+```bibtex
+@article{yilmaz2026comparative,
+  author = {Yilmaz, Taner and Aydogmus, Omur},
+  title = {A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer},
+  journal = {IEEE Access},
+  year = {2026},
+  volume = {14},
+  pages = {60268--60284},
+  doi = {10.1109/ACCESS.2026.3684520},
+  publisher = {IEEE}
+}
+```
+
+## Keywords
+
+Deep reinforcement learning, map-free navigation, mobile robot navigation, zero-shot sim-to-real transfer, autonomous robots, robot learning, Stable-Baselines3, ROS, Gazebo, TurtleBot3.
