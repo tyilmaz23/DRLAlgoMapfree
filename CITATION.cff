@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this repository or discuss this work, please cite the IEEE Access article."
 title: "A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer"
+type: software
 authors:
   - family-names: "Yilmaz"
     given-names: "Taner"
@@ -10,10 +11,6 @@ authors:
     orcid: "https://orcid.org/0000-0001-8142-1146"
 doi: "10.1109/ACCESS.2026.3684520"
 url: "https://ieeexplore.ieee.org/document/11482413/"
-journal: "IEEE Access"
-volume: "14"
-pages: "60268-60284"
-date-published: "2026"
 license: "MIT"
 keywords:
   - "deep reinforcement learning"
@@ -22,3 +19,20 @@ keywords:
   - "zero-shot sim-to-real transfer"
   - "autonomous robots"
   - "robot learning"
+preferred-citation:
+  type: article
+  title: "A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer"
+  authors:
+    - family-names: "Yilmaz"
+      given-names: "Taner"
+      orcid: "https://orcid.org/0000-0002-1721-9071"
+    - family-names: "Aydogmus"
+      given-names: "Omur"
+      orcid: "https://orcid.org/0000-0001-8142-1146"
+  journal: "IEEE Access"
+  volume: "14"
+  start: 60268
+  end: 60284
+  year: 2026
+  doi: "10.1109/ACCESS.2026.3684520"
+  url: "https://ieeexplore.ieee.org/document/11482413/"
