@@ -22,12 +22,12 @@ gh release create v1.0.0 --repo tyilmaz23/DRLAlgoMapfree --title "DRLAlgoMapfree
 
 Zenodo should then archive the GitHub release and mint a software DOI.
 
-## After DOI Minting
+## DOI Minted
 
-Once Zenodo provides a DOI:
+Zenodo created the software archive:
 
-- Add the Zenodo DOI badge to `README.md`.
-- Add the Zenodo DOI to `codemeta.json`.
-- Add the Zenodo DOI to `metadata/schema_org_article.jsonld`.
-- Add the Zenodo DOI to the GitHub Pages paper page.
-- Add the Zenodo DOI to ORCID as software or research output.
+- Version DOI: https://doi.org/10.5281/zenodo.20715169
+- Concept DOI: https://doi.org/10.5281/zenodo.20715168
+- Zenodo record: https://zenodo.org/records/20715169
+
+Add the Zenodo DOI to ORCID as software or research output.

@@ -5,6 +5,8 @@ This release archives the reproducibility repository for the IEEE Access article
 **A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer**
 
 - Article DOI: https://doi.org/10.1109/ACCESS.2026.3684520
+- Software DOI: https://doi.org/10.5281/zenodo.20715169
+- Zenodo record: https://zenodo.org/records/20715169
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11482413/
 - Paper page: https://tyilmaz23.github.io/DRLAlgoMapfree/
 - Web of Science UID: `WOS:001748497200045`

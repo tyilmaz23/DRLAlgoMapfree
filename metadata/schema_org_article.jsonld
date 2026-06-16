@@ -6,10 +6,13 @@
   "description": "A comparative study of deep reinforcement learning algorithms for map-free mobile robot navigation with zero-shot sim-to-real transfer.",
   "identifier": [
     "https://doi.org/10.1109/ACCESS.2026.3684520",
+    "https://doi.org/10.5281/zenodo.20715169",
     "WOS:001748497200045"
   ],
   "sameAs": [
     "https://doi.org/10.1109/ACCESS.2026.3684520",
+    "https://doi.org/10.5281/zenodo.20715169",
+    "https://zenodo.org/records/20715169",
     "https://ieeexplore.ieee.org/document/11482413/",
     "https://github.com/tyilmaz23/DRLAlgoMapfree"
   ],

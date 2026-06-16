@@ -3,6 +3,8 @@
 This repository supports the IEEE Access article by Taner Yilmaz and Omur Aydogmus.
 
 Canonical article DOI: https://doi.org/10.1109/ACCESS.2026.3684520
+Software DOI: https://doi.org/10.5281/zenodo.20715169
+Zenodo record: https://zenodo.org/records/20715169
 IEEE Xplore: https://ieeexplore.ieee.org/document/11482413/
 Repository: https://github.com/tyilmaz23/DRLAlgoMapfree
 Paper page: https://tyilmaz23.github.io/DRLAlgoMapfree/
@@ -23,6 +25,12 @@ This work compares deep reinforcement learning algorithms for map-free mobile ro
 - ROS, Gazebo, and TurtleBot3 deployment context
 
 ## Recommended Citation
+
+Software archive:
+
+Yilmaz, T., and Aydogmus, O. (2026). DRLAlgoMapfree: Reproducibility Repository for DRL Algorithms in Map-Free Robot Navigation. Zenodo. https://doi.org/10.5281/zenodo.20715169
+
+Article:
 
 Yilmaz, T., and Aydogmus, O. (2026). A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer. IEEE Access, 14, 60268-60284. https://doi.org/10.1109/ACCESS.2026.3684520
 

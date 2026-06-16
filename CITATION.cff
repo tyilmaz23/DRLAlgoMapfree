@@ -9,8 +9,8 @@ authors:
   - family-names: "Aydogmus"
     given-names: "Omur"
     orcid: "https://orcid.org/0000-0001-8142-1146"
-doi: "10.1109/ACCESS.2026.3684520"
-url: "https://ieeexplore.ieee.org/document/11482413/"
+doi: "10.5281/zenodo.20715169"
+url: "https://github.com/tyilmaz23/DRLAlgoMapfree"
 license: "MIT"
 keywords:
   - "deep reinforcement learning"

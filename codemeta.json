@@ -2,6 +2,7 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "name": "DRLAlgoMapfree",
+  "identifier": "https://doi.org/10.5281/zenodo.20715169",
   "description": "Reproducibility repository for the IEEE Access article comparing deep reinforcement learning algorithms for map-free robot navigation with zero-shot sim-to-real transfer.",
   "codeRepository": "https://github.com/tyilmaz23/DRLAlgoMapfree",
   "url": "https://tyilmaz23.github.io/DRLAlgoMapfree/",
@@ -40,7 +41,10 @@
       "@id": "https://orcid.org/0000-0001-8142-1146"
     }
   ],
-  "citation": "https://doi.org/10.1109/ACCESS.2026.3684520",
+  "citation": [
+    "https://doi.org/10.5281/zenodo.20715169",
+    "https://doi.org/10.1109/ACCESS.2026.3684520"
+  ],
   "isSupplementTo": {
     "@type": "ScholarlyArticle",
     "name": "A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer",

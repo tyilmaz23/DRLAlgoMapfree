@@ -1,5 +1,7 @@
 # Map-Free DRL Navigation With Zero-Shot Sim-to-Real Transfer
 
+[![Software DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20715169.svg)](https://doi.org/10.5281/zenodo.20715169)
+
 Reproducibility repository for the IEEE Access article:
 
 **A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer**
@@ -7,6 +9,8 @@ Reproducibility repository for the IEEE Access article:
 Taner Yilmaz and Omur Aydogmus, *IEEE Access*, vol. 14, pp. 60268-60284, 2026.
 
 - DOI: [10.1109/ACCESS.2026.3684520](https://doi.org/10.1109/ACCESS.2026.3684520)
+- Software DOI: [10.5281/zenodo.20715169](https://doi.org/10.5281/zenodo.20715169)
+- Zenodo record: [zenodo.org/records/20715169](https://zenodo.org/records/20715169)
 - Paper page: [tyilmaz23.github.io/DRLAlgoMapfree](https://tyilmaz23.github.io/DRLAlgoMapfree/)
 - IEEE Xplore: [Document 11482413](https://ieeexplore.ieee.org/document/11482413/)
 - Web of Science UID: `WOS:001748497200045`
