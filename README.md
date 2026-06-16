@@ -41,6 +41,8 @@ This repository includes metadata files to help search engines, scholarly indexe
 - [`.zenodo.json`](.zenodo.json): Zenodo metadata for software DOI archiving.
 - [`metadata/schema_org_article.jsonld`](metadata/schema_org_article.jsonld): Schema.org scholarly article metadata.
 - [`docs/index.html`](docs/index.html): GitHub Pages paper page with embedded structured metadata.
+- [`docs/sitemap.xml`](docs/sitemap.xml): sitemap for Google and other search engines.
+- [`docs/robots.txt`](docs/robots.txt): crawler access and sitemap location.
 
 ## Repository Layout
 
