@@ -7,6 +7,7 @@ Reproducibility repository for the IEEE Access article:
 Taner Yilmaz and Omur Aydogmus, *IEEE Access*, vol. 14, pp. 60268-60284, 2026.
 
 - DOI: [10.1109/ACCESS.2026.3684520](https://doi.org/10.1109/ACCESS.2026.3684520)
+- Paper page: [tyilmaz23.github.io/DRLAlgoMapfree](https://tyilmaz23.github.io/DRLAlgoMapfree/)
 - IEEE Xplore: [Document 11482413](https://ieeexplore.ieee.org/document/11482413/)
 - Web of Science UID: `WOS:001748497200045`
 - ORCID: [Taner Yilmaz](https://orcid.org/0000-0002-1721-9071)
@@ -25,6 +26,16 @@ The repository provides:
 - Optuna hyperparameter optimization scripts with a fixed-seed protocol.
 - Evaluation scripts for success, collision, timeout, and path-length metrics.
 - Documentation for ROS/Gazebo and TurtleBot3 Burger deployment.
+
+## Discoverability
+
+This repository includes metadata files to help search engines, scholarly indexes, and AI tools understand the relation between the code and the IEEE Access article.
+
+- [`CITATION.cff`](CITATION.cff): citation metadata for GitHub's "Cite this repository" feature.
+- [`codemeta.json`](codemeta.json): software metadata linked to the article DOI.
+- [`llms.txt`](llms.txt): concise AI-readable summary and canonical links.
+- [`metadata/schema_org_article.jsonld`](metadata/schema_org_article.jsonld): Schema.org scholarly article metadata.
+- [`docs/index.html`](docs/index.html): GitHub Pages paper page with embedded structured metadata.
 
 ## Repository Layout
 

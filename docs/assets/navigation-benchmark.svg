@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Map-free robot navigation benchmark</title>
+  <desc id="desc">A schematic 10 by 10 meter arena with randomized obstacles, a mobile robot path, LiDAR rays, and sim-to-real transfer labels.</desc>
+  <rect width="1200" height="630" fill="#f7f8fb"/>
+  <rect x="70" y="70" width="520" height="490" rx="6" fill="#ffffff" stroke="#1b2733" stroke-width="4"/>
+  <g stroke="#d8dee7" stroke-width="1">
+    <path d="M122 70v490M174 70v490M226 70v490M278 70v490M330 70v490M382 70v490M434 70v490M486 70v490M538 70v490"/>
+    <path d="M70 119h520M70 168h520M70 217h520M70 266h520M70 315h520M70 364h520M70 413h520M70 462h520M70 511h520"/>
+  </g>
+  <g fill="#334155">
+    <rect x="165" y="150" width="125" height="48" rx="4"/>
+    <rect x="405" y="120" width="62" height="155" rx="4"/>
+    <rect x="180" y="382" width="155" height="58" rx="4"/>
+    <rect x="388" y="405" width="95" height="46" rx="4"/>
+  </g>
+  <path d="M134 500 C180 420 160 345 240 315 C308 289 330 220 393 210 C455 199 480 275 522 315" fill="none" stroke="#1f9d8a" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="134" cy="500" r="16" fill="#1f9d8a"/>
+  <circle cx="522" cy="315" r="18" fill="#d97706"/>
+  <g stroke="#3b82f6" stroke-width="2" opacity=".55">
+    <path d="M240 315 L120 250"/>
+    <path d="M240 315 L156 188"/>
+    <path d="M240 315 L310 176"/>
+    <path d="M240 315 L438 300"/>
+    <path d="M240 315 L354 430"/>
+    <path d="M240 315 L120 405"/>
+  </g>
+  <circle cx="240" cy="315" r="28" fill="#2563eb"/>
+  <circle cx="240" cy="315" r="11" fill="#ffffff"/>
+  <text x="88" y="102" font-family="Arial, sans-serif" font-size="24" fill="#1b2733" font-weight="700">Simulation arena</text>
+  <text x="88" y="535" font-family="Arial, sans-serif" font-size="18" fill="#475569">Randomized obstacles, LiDAR observations, no map input</text>
+  <g transform="translate(675 86)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="34" fill="#111827" font-weight="700">Zero-shot sim-to-real transfer</text>
+    <text x="0" y="42" font-family="Arial, sans-serif" font-size="22" fill="#475569">DRL comparison for map-free mobile robot navigation</text>
+    <g transform="translate(0 96)">
+      <rect x="0" y="0" width="360" height="54" rx="6" fill="#e0f2fe" stroke="#0284c7"/>
+      <text x="22" y="35" font-family="Arial, sans-serif" font-size="22" fill="#075985">PPO, SAC, A2C, TD3, DDPG</text>
+      <rect x="0" y="82" width="360" height="54" rx="6" fill="#ecfdf5" stroke="#059669"/>
+      <text x="22" y="117" font-family="Arial, sans-serif" font-size="22" fill="#065f46">Stable-Baselines3 pipeline</text>
+      <rect x="0" y="164" width="360" height="54" rx="6" fill="#fff7ed" stroke="#ea580c"/>
+      <text x="22" y="199" font-family="Arial, sans-serif" font-size="22" fill="#9a3412">TurtleBot3 and Gazebo notes</text>
+    </g>
+    <path d="M82 360 H320" stroke="#111827" stroke-width="6" stroke-linecap="round"/>
+    <path d="M320 360 l-24 -18 M320 360 l-24 18" stroke="#111827" stroke-width="6" stroke-linecap="round"/>
+    <text x="0" y="348" font-family="Arial, sans-serif" font-size="24" fill="#111827" font-weight="700">Simulation</text>
+    <text x="340" y="348" font-family="Arial, sans-serif" font-size="24" fill="#111827" font-weight="700">Real robot</text>
+    <text x="0" y="435" font-family="Arial, sans-serif" font-size="19" fill="#475569">IEEE Access, 2026</text>
+    <text x="0" y="465" font-family="Arial, sans-serif" font-size="19" fill="#475569">DOI: 10.1109/ACCESS.2026.3684520</text>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+# A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer
+
+This repository supports the IEEE Access article by Taner Yilmaz and Omur Aydogmus.
+
+Canonical article DOI: https://doi.org/10.1109/ACCESS.2026.3684520
+IEEE Xplore: https://ieeexplore.ieee.org/document/11482413/
+Repository: https://github.com/tyilmaz23/DRLAlgoMapfree
+Paper page: https://tyilmaz23.github.io/DRLAlgoMapfree/
+Web of Science UID: WOS:001748497200045
+ORCID: https://orcid.org/0000-0002-1721-9071
+
+## Summary
+
+This work compares deep reinforcement learning algorithms for map-free mobile robot navigation and evaluates zero-shot transfer from simulation to real-world robot navigation. It is relevant to researchers studying autonomous navigation, mobile robots, robot learning, reinforcement learning benchmarks, LiDAR-based navigation, and sim-to-real transfer.
+
+## Main Topics
+
+- Deep reinforcement learning for mobile robot navigation
+- Map-free navigation without global map input
+- Zero-shot sim-to-real transfer
+- PPO, SAC, A2C, TD3, and DDPG comparison
+- Stable-Baselines3 training and evaluation pipeline
+- ROS, Gazebo, and TurtleBot3 deployment context
+
+## Recommended Citation
+
+Yilmaz, T., and Aydogmus, O. (2026). A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer. IEEE Access, 14, 60268-60284. https://doi.org/10.1109/ACCESS.2026.3684520
+
+```bibtex
+@article{yilmaz2026comparative,
+  author = {Yilmaz, Taner and Aydogmus, Omur},
+  title = {A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer},
+  journal = {IEEE Access},
+  year = {2026},
+  volume = {14},
+  pages = {60268--60284},
+  doi = {10.1109/ACCESS.2026.3684520},
+  publisher = {IEEE}
+}
+```
+
+## Repository Structure
+
+- `drl_nav_repro_repo/`: implementation and reproduction files
+- `drl_nav_repro_repo/scripts/`: training, evaluation, and Optuna scripts
+- `drl_nav_repro_repo/sim/`: custom simulator and utilities
+- `drl_nav_repro_repo/configs/`: environment, reward, and hyperparameter settings
+- `drl_nav_repro_repo/docs/`: reproduction and ROS/Gazebo notes
+- `docs/`: public paper page and visibility materials
+- `metadata/`: structured article metadata

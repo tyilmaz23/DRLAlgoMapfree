@@ -1,0 +1,52 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "DRLAlgoMapfree",
+  "description": "Reproducibility repository for the IEEE Access article comparing deep reinforcement learning algorithms for map-free robot navigation with zero-shot sim-to-real transfer.",
+  "codeRepository": "https://github.com/tyilmaz23/DRLAlgoMapfree",
+  "url": "https://tyilmaz23.github.io/DRLAlgoMapfree/",
+  "license": "https://spdx.org/licenses/MIT",
+  "programmingLanguage": [
+    "Python"
+  ],
+  "runtimePlatform": [
+    "Python",
+    "ROS",
+    "Gazebo"
+  ],
+  "keywords": [
+    "deep reinforcement learning",
+    "map-free navigation",
+    "mobile robot navigation",
+    "zero-shot sim-to-real transfer",
+    "autonomous robots",
+    "robot learning",
+    "Stable-Baselines3",
+    "TurtleBot3"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Taner",
+      "familyName": "Yilmaz",
+      "name": "Taner Yilmaz",
+      "@id": "https://orcid.org/0000-0002-1721-9071"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Omur",
+      "familyName": "Aydogmus",
+      "name": "Omur Aydogmus",
+      "@id": "https://orcid.org/0000-0001-8142-1146"
+    }
+  ],
+  "citation": "https://doi.org/10.1109/ACCESS.2026.3684520",
+  "isSupplementTo": {
+    "@type": "ScholarlyArticle",
+    "name": "A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer",
+    "identifier": "https://doi.org/10.1109/ACCESS.2026.3684520",
+    "url": "https://ieeexplore.ieee.org/document/11482413/"
+  },
+  "datePublished": "2026",
+  "developmentStatus": "active"
+}
