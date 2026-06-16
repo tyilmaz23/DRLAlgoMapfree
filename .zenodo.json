@@ -1,0 +1,57 @@
+{
+  "title": "DRLAlgoMapfree: Reproducibility Repository for DRL Algorithms in Map-Free Robot Navigation",
+  "upload_type": "software",
+  "description": "Reproducibility repository for the IEEE Access article \"A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer\". The repository provides a Python-based training and evaluation pipeline for comparing PPO, SAC, A2C, TD3, and DDPG in map-free mobile robot navigation, with supporting material for zero-shot sim-to-real transfer experiments.",
+  "creators": [
+    {
+      "name": "Yilmaz, Taner",
+      "orcid": "0000-0002-1721-9071",
+      "affiliation": "Firat University"
+    },
+    {
+      "name": "Aydogmus, Omur",
+      "orcid": "0000-0001-8142-1146",
+      "affiliation": "Firat University"
+    }
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "deep reinforcement learning",
+    "map-free navigation",
+    "mobile robot navigation",
+    "zero-shot sim-to-real transfer",
+    "autonomous robots",
+    "robot learning",
+    "Stable-Baselines3",
+    "ROS",
+    "Gazebo",
+    "TurtleBot3"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1109/ACCESS.2026.3684520",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/tyilmaz23/DRLAlgoMapfree",
+      "relation": "isIdenticalTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://tyilmaz23.github.io/DRLAlgoMapfree/",
+      "relation": "isDocumentedBy",
+      "resource_type": "publication-other",
+      "scheme": "url"
+    }
+  ],
+  "references": [
+    "Yilmaz, T., and Aydogmus, O. (2026). A Comparative Study of DRL Algorithms for Map-Free Robot Navigation With Zero-Shot Sim-to-Real Transfer. IEEE Access, 14, 60268-60284. https://doi.org/10.1109/ACCESS.2026.3684520"
+  ],
+  "communities": [],
+  "version": "1.0.0",
+  "language": "eng"
+}

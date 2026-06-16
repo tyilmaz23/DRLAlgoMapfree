@@ -34,6 +34,7 @@ This repository includes metadata files to help search engines, scholarly indexe
 - [`CITATION.cff`](CITATION.cff): citation metadata for GitHub's "Cite this repository" feature.
 - [`codemeta.json`](codemeta.json): software metadata linked to the article DOI.
 - [`llms.txt`](llms.txt): concise AI-readable summary and canonical links.
+- [`.zenodo.json`](.zenodo.json): Zenodo metadata for software DOI archiving.
 - [`metadata/schema_org_article.jsonld`](metadata/schema_org_article.jsonld): Schema.org scholarly article metadata.
 - [`docs/index.html`](docs/index.html): GitHub Pages paper page with embedded structured metadata.
 
